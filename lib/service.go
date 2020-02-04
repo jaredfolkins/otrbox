@@ -16,11 +16,12 @@ import (
 const MsgMaxBytes = 8192 - 1
 
 type Pub struct {
-	Key    *[32]byte
+	Key    *[32]byte `json:"-"`
 	HexStr string
 }
+
 type Prv struct {
-	Key    *[32]byte
+	Key    *[32]byte `json:"-"`
 	HexStr string
 }
 
